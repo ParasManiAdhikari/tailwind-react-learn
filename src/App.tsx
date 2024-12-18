@@ -1,11 +1,21 @@
-import Test1 from "./components/Test1"
+import React, { useState, useEffect } from "react";
 
 function App() {
+  const testNumber = 2; // Define the test number
+  const [TestComponent, setTestComponent] = useState<React.ComponentType | null>(null);
+
+  useEffect(() => {
+    // Dynamically import the component based on testNumber
+    import(`./components/Test${testNumber}`)
+      .then((module) => setTestComponent(() => module.default))
+      .catch((err) => console.error("Failed to load component:", err));
+  }, [testNumber]);
+
   return (
     <>
-      <Test1></Test1>
+      {TestComponent ? <TestComponent /> : <p>Loading component...</p>}
     </>
-  )
+  );
 }
 
-export default App
+export default App;
