@@ -1,15 +1,15 @@
 export default function Test2() {
     return (
-        <div className="min-h-screen">
+        <div className="min-h-screen font-title">
             <div className="bg-[#b4b440] p-6">
                 <div className="flex justify-between mb-8">
                     <span>COMPANY NAME</span>
                     <span>MONTH XX YEAR</span>
                 </div>
 
-                <h1 className="text-9xl font-bold min-w-4xl mx-auto mb-8 text-center">
-                    <div>Midi Mod</div>
-                    <div>Theme</div>
+                <h1 className="text-9xl min-w-4xl mx-auto mb-8 text-center">
+                    <div>Playfair</div>
+                    <div>Display</div>
                 </h1>
             </div>
 
