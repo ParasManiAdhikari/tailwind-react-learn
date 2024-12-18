@@ -5,7 +5,6 @@ function App() {
   const [TestComponent, setTestComponent] = useState<React.ComponentType | null>(null);
 
   useEffect(() => {
-    // Dynamically import the component based on testNumber
     import(`./components/Test${testNumber}`)
       .then((module) => setTestComponent(() => module.default))
       .catch((err) => console.error("Failed to load component:", err));
