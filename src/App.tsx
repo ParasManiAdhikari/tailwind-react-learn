@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 
 function App() {
-  const testNumber = 1; // Define the test number
+  const testNumber = 2; // Define the test number
   const [TestComponent, setTestComponent] = useState<React.ComponentType | null>(null);
 
   useEffect(() => {

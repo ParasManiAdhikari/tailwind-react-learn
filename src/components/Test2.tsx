@@ -8,8 +8,8 @@ export default function Test2() {
                 </div>
 
                 <h1 className="text-9xl min-w-4xl mx-auto mb-8 text-center">
-                    <div>Playfair</div>
-                    <div>Display</div>
+                    <div>Ron Don</div>
+                    <div>Dave</div>
                 </h1>
             </div>
 
