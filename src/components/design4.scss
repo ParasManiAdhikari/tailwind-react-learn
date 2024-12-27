@@ -8,24 +8,25 @@
       align-items: center;
       justify-content: center;
       color: #afa18f;
-      font-size: 64px;
-      line-height: 66px;
+      font-size: 66px;
+      line-height: 70px;
       cursor: default;
       
       p{
-        width: 1000px;
+        width: 1500px;
         padding:40px;
+        align-items: center;
       }
       span{
-        color: white;
+        color: black;
       }
     }
   
     .mask{
       mask-image: url('./utils/mask.svg');
       mask-repeat: no-repeat;
-      mask-size: 40px;
-      background: #ec4e39;
+      mask-size: 50px;
+      background: #afa18f;
       position: absolute;
       color: black;
     }
