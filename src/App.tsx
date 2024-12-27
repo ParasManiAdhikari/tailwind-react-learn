@@ -1,18 +1,19 @@
 import React, { useState, useEffect } from "react";
 
 function App() {
-  const testNumber = 2; // Define the test number
-  const [TestComponent, setTestComponent] = useState<React.ComponentType | null>(null);
+  const DesignNumber = 3; // Define the Design number
+
+  const [DesignComponent, setDesignComponent] = useState<React.ComponentType | null>(null);
 
   useEffect(() => {
-    import(`./components/Test${testNumber}`)
-      .then((module) => setTestComponent(() => module.default))
+    import(`./components/Design${DesignNumber}`)
+      .then((module) => setDesignComponent(() => module.default))
       .catch((err) => console.error("Failed to load component:", err));
-  }, [testNumber]);
+  }, [DesignNumber]);
 
   return (
     <>
-      {TestComponent ? <TestComponent /> : <p>Loading component...</p>}
+      {DesignComponent ? <DesignComponent /> : <p>Loading component...</p>}
     </>
   );
 }

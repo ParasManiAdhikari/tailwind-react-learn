@@ -1,15 +1,15 @@
-export default function Test2() {
+export default function Design2() {
     return (
         <div className="min-h-screen font-title">
             <div className="bg-[#b4b440] p-6">
                 <div className="flex justify-between mb-8">
-                    <span>COMPANY NAME</span>
+                    <span>PAGE X</span>
                     <span>MONTH XX YEAR</span>
                 </div>
 
                 <h1 className="text-9xl min-w-4xl mx-auto mb-8 text-center">
-                    <div>Ron Don</div>
-                    <div>Dave</div>
+                    <div>P ⑥</div>
+                    <div></div>
                 </h1>
             </div>
 
