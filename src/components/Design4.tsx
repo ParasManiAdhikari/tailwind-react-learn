@@ -22,13 +22,13 @@ export default function Design4() {
           onMouseEnter={() => setIsHovered(true)} 
           onMouseLeave={() => setIsHovered(false)}
         >
-          A visual designer - with skills that haven't been replaced by A.I (yet) - making good shit only if the paycheck is equally good.
+        A mask effect is a visual technique used to hide or reveal parts of an element based on a defined shape or path, controlling its visibility.
         </p>
       </motion.div>
 
       <div className='body'>
-        <p>
-          I'm a <span>selectively skilled</span> product designer with strong focus on producing high quality & impactful digital experience.
+        <p className=''>
+        A mask effect ..<br /> <br /> <br /> <br /><span>.</span>
         </p>
       </div>
     </main>
