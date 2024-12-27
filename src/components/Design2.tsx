@@ -8,7 +8,7 @@ export default function Design2() {
                 </div>
 
                 <h1 className="text-9xl min-w-4xl mx-auto mb-8 text-center">
-                    <div>P ⑥</div>
+                    <div>PA ⑥</div>
                     <div></div>
                 </h1>
             </div>
