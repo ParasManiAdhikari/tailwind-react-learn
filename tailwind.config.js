@@ -8,6 +8,7 @@ export default {
     extend: {
       fontFamily: {
         title: ['DM Sans', 'serif'],
+        synco: ['Syncopate', 'sans-serif']
       },
     },
   },
