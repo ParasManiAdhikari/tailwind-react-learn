@@ -7,7 +7,7 @@ export default function Design2() {
                     <span>PAJAX</span>
                 </div>
 
-                <h1 className="text-9xl min-w-4xl h-fit text-center font-bold">
+                <h1 className="text-9xl min-w-4xl text-center font-bold">
                     <div>PA⑥</div>
                 </h1>
 
