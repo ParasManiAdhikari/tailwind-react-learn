@@ -82,8 +82,8 @@ export default function Design5() {
                     <div className="flex flex-col justify-center items-center">
                         {!submitted && (
                             <div className="flex justify-center items-center space-x-2">
-                            <div className="w-24 h-24 bg-white rounded-full animate-bounce"></div>
-                          </div>
+                                <div className="w-24 h-24 bg-white rounded-full animate-bounce"></div>
+                            </div>
                         )}
 
                         {submitted && (
@@ -98,8 +98,13 @@ export default function Design5() {
                                 placeholder="Enter something"
                                 className="p-4 border-2 rounded-md bg-[#b4b440] placeholder-yellow-200 outline-none"
                             />
-                            <button onClick={handleSubmit} className="rounded-lg p-4 ml-2 bg-[#3e3e10] hover:bg-[#4a4a14] transition-transform transform hover:scale-100 active:scale-90 cursor-pointer">
-                                Play</button>
+                            <button
+                                onClick={handleSubmit}
+                                className="rounded-lg p-4 ml-2 border-2 border-white hover:bg-[#3e3e10] transition-transform transform hover:scale-100 active:scale-90 cursor-pointer"
+                            >
+                                Play
+                            </button>
+
                         </div>
                     </div>
                 </h1>
