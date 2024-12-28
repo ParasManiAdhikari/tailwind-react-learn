@@ -72,9 +72,9 @@ export default function Design5() {
 
     // App Component with SplitText usage
     return (
-        <div className="min-h-screen min-w-screen font-title">
+        <div className="min-h-screen min-w-screen font-title text-white">
             <div className="bg-[#b4b440] p-5 h-screen flex flex-col justify-between">
-                <div className="flex justify-between">
+                <div className="flex justify-between border-b-2 border-white">
                     <span>PEHSECHS</span>
                     <span>PAJAX</span>
                 </div>
@@ -88,7 +88,7 @@ export default function Design5() {
                         )}
 
                         {submitted && (
-                            <SplitText text={displayValue + "!"} className="text-white font-synco text-8xl" />
+                            <SplitText text={displayValue + "!"} className="font-synco text-8xl" />
                         )}
 
                         <div className="flex flex-row text-4xl mt-20">
@@ -97,15 +97,15 @@ export default function Design5() {
                                 value={inputValue}
                                 onChange={handleInputChange}
                                 placeholder="Enter something"
-                                className="p-4 border-2 rounded-md bg-[#b4b440] text-white placeholder-yellow-200"
+                                className="p-4 border-2 rounded-md bg-[#b4b440] placeholder-yellow-200 outline-none"
                             />
-                            <button onClick={handleSubmit} className="rounded-lg p-4 ml-2 bg-[#3e3e10] text-white hover:bg-[#4a4a14] transition-transform transform hover:scale-100 active:scale-90 cursor-pointer">
+                            <button onClick={handleSubmit} className="rounded-lg p-4 ml-2 bg-[#3e3e10] hover:bg-[#4a4a14] transition-transform transform hover:scale-100 active:scale-90 cursor-pointer">
                                 Play</button>
                         </div>
                     </div>
                 </h1>
 
-                <div className="flex justify-between">
+                <div className="flex justify-between border-t-2 border-white">
                     <span>PAGE X</span>
                     <span>PSX</span>
                 </div>
