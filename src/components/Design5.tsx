@@ -61,9 +61,16 @@ export default function Design5() {
 
     const [inputValue, setInputValue] = useState<string>('Split Text Animation');
     const [displayValue, setDisplayValue] = useState<string>('');
+    const [submitted, setSubmitted] = useState<boolean>(false);
 
     const handleSubmit = () => {
         setDisplayValue(inputValue);
+        setSubmitted(true);
+    };
+
+    const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+        setInputValue(e.target.value);
+        setSubmitted(false);
     };
 
     // App Component with SplitText usage
@@ -75,19 +82,26 @@ export default function Design5() {
                     <span>PAJAX</span>
                 </div>
 
-                <h1 className="text-9xl text-center font-bold justify-center">
+                <h1 className="text-9xl text-center justify-center">
                     <div className="flex flex-col justify-center items-center">
-                        <SplitText text={displayValue} className="text-white text-9xl" />
+                        {!submitted && (
+                            <SplitText text='. .' className="text-white text-8xl" />
+                        )}
+
+                        {submitted && (
+                            <SplitText text={displayValue} className="text-white font-synco text-8xl" />
+                        )}
+
                         <div className="flex flex-row text-4xl mt-20">
                             <input
                                 type="text"
                                 value={inputValue}
-                                onChange={(e) => setInputValue(e.target.value)}
+                                onChange={handleInputChange}
                                 placeholder="Enter something"
                                 className="p-4 border-2 rounded-md"
                             />
-                            <button onClick={handleSubmit} className="rounded-lg p-4 ml-2 bg-yellow-200">
-                                Submit</button>
+                            <button onClick={handleSubmit} className="rounded-lg p-4 ml-2 bg-amber-200">
+                                Play</button>
                         </div>
                     </div>
                 </h1>
