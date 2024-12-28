@@ -1,61 +1,7 @@
-import { motion } from "framer-motion"
 import { useState } from 'react';
-
-interface SplitTextProps {
-    text: string
-    className?: string
-}
+import SplitText from './utils/SplitText'; // Import the SplitText component
 
 export default function Design5() {
-
-    function SplitText({ text, className }: SplitTextProps) {
-        const characters = text.split("")
-
-        const containerVariants = {
-            hidden: { opacity: 0 },
-            visible: (i = 1) => ({
-                opacity: 1,
-                transition: { staggerChildren: 0.03, delayChildren: 0.04 * i },
-            }),
-        }
-
-        const childVariants = {
-            visible: {
-                opacity: 1,
-                y: 0,
-                transition: {
-                    type: "spring",
-                    damping: 12,
-                    stiffness: 200,
-                },
-            },
-            hidden: {
-                opacity: 0,
-                y: 20,
-                transition: {
-                    type: "spring",
-                    damping: 12,
-                    stiffness: 200,
-                },
-            },
-        }
-
-        return (
-            <motion.h1
-                className={`text-4xl font-bold tracking-tight ${className}`}
-                variants={containerVariants}
-                initial="hidden"
-                animate="visible"
-            >
-                {characters.map((character, index) => (
-                    <motion.span key={index} variants={childVariants} className="inline-block">
-                        {character === " " ? "\u00A0" : character}
-                    </motion.span>
-                ))}
-            </motion.h1>
-        )
-    }
-
     const [inputValue, setInputValue] = useState<string>('Split Text Animation');
     const [displayValue, setDisplayValue] = useState<string>('');
     const [submitted, setSubmitted] = useState<boolean>(false);
@@ -70,12 +16,11 @@ export default function Design5() {
         setSubmitted(false);
     };
 
-    // App Component with SplitText usage
     return (
         <div className="min-h-screen min-w-screen font-title text-white">
             <div className="bg-[#b4b440] p-5 h-screen flex flex-col justify-between">
                 <div className="flex justify-center border-b-2 border-white p-2 text-2xl">
-                    <span>Split Text Animation</span>
+                    <span>Split Text Animation Showcase</span>
                 </div>
 
                 <h1 className="text-9xl text-center justify-center">
@@ -104,7 +49,6 @@ export default function Design5() {
                             >
                                 Play
                             </button>
-
                         </div>
                     </div>
                 </h1>
@@ -114,5 +58,5 @@ export default function Design5() {
                 </div>
             </div>
         </div>
-    )
+    );
 }
