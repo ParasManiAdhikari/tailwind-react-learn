@@ -28,7 +28,7 @@ export default function Design4() {
 
             <div className='body'>
                 <p className=''>
-                    A mask effect . .<br /><br /><br /> <br /><span>.</span>
+                    A mask effect <span>is a visual technique used to hide or reveal parts of an element based on a defined shape or path, controlling its visibility.</span>
                 </p>
             </div>
         </main>
