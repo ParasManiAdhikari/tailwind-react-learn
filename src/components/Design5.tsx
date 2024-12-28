@@ -99,7 +99,7 @@ export default function Design5() {
                                 placeholder="Enter something"
                                 className="p-4 border-2 rounded-md bg-[#b4b440] text-white placeholder-yellow-200"
                             />
-                            <button onClick={handleSubmit} className="rounded-lg p-4 ml-2 bg-[#3e3e10] text-white">
+                            <button onClick={handleSubmit} className="rounded-lg p-4 ml-2 bg-[#3e3e10] text-white hover:bg-[#4a4a14] transition-transform transform hover:scale-100 active:scale-90 cursor-pointer">
                                 Play</button>
                         </div>
                     </div>
