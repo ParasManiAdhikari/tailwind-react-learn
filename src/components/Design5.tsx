@@ -74,9 +74,8 @@ export default function Design5() {
     return (
         <div className="min-h-screen min-w-screen font-title text-white">
             <div className="bg-[#b4b440] p-5 h-screen flex flex-col justify-between">
-                <div className="flex justify-between border-b-2 border-white">
-                    <span>PEHSECHS</span>
-                    <span>PAJAX</span>
+                <div className="flex justify-center border-b-2 border-white p-2 text-2xl">
+                    <span>Split Text Animation</span>
                 </div>
 
                 <h1 className="text-9xl text-center justify-center">
@@ -105,9 +104,8 @@ export default function Design5() {
                     </div>
                 </h1>
 
-                <div className="flex justify-between border-t-2 border-white">
-                    <span>PAGE X</span>
-                    <span>PSX</span>
+                <div className="flex justify-center border-t-2 border-white p-2 text-2xl">
+                    <span>PA⑥</span>
                 </div>
             </div>
         </div>
