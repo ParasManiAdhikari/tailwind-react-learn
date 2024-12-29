@@ -10,3 +10,7 @@
     -webkit-text-stroke-color: white;
     -webkit-text-stroke-width: 1px ;
 }
+
+.perspective{
+    perspective: 2200px;
+}
