@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 
 function App() {
-  const DesignNumber = 4; // Define the Design number
+  const DesignNumber = 6; // Define the Design number
 
   const [DesignComponent, setDesignComponent] = useState<React.ComponentType | null>(null);
 

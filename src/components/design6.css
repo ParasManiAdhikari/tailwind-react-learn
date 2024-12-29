@@ -1,0 +1,12 @@
+.image{
+    -webkit-mask-image: url(./utils/circlemask.png);
+    -webkit-mask-position: center;
+    -webkit-mask-repeat: no-repeat;
+    height: 100%;
+}
+
+.text-stroke{
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-color: white;
+    -webkit-text-stroke-width: 1px ;
+}
