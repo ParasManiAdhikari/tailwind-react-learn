@@ -1,10 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Display:ital@0;1&family=Workbench&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Cormorant+Garamond:wght@600&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Display:ital@0;1&family=Syncopate:wght@400;700&family=Workbench&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Cormorant+Garamond:wght@600&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Display:ital@0;1&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Syncopate:wght@400;700&family=Workbench&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 
-main {
+@font-face {
+    font-family: 'Regular';
+    src: url('./components/utils/PPAcma-Book.ttf');
+}
+
+body {
+    font-family: 'Regular';
     background-color: black;
 }
