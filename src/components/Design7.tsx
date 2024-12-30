@@ -37,12 +37,12 @@ const Section1 = ({ scrollYProgress }: { scrollYProgress: any }) => {
 
     return (
         <motion.div style={{ scale, rotate }} className="sticky top-0 h-screen bg-[#c72626] text-[3.5vw] flex flex-col items-center
-        justify-center text-white pb-[10vh] font-synco">
+        justify-center text-white pb-[10vh] font-title">
             <p>Parallax Section Transition</p>
             <div className="flex gap-4">
                 <p>Section</p>
                 <div>
-                    <img src={Pic1} alt="" className="object-cover rounded-lg" width={200} />
+                    <img src={Pic1} alt="" className="object-cover rounded-lg" width={120} />
                 </div>
                 <p>Transition</p>
             </div>
